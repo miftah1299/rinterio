@@ -38,6 +38,7 @@
                     backgroundImage: {
                         'custom-gradient': 'linear-gradient(0.0deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%)',
                         'vector-image': "url('assets/Vector.png')",
+                        'contact-bg': "url('assets/bg.jpg')",
                     }
                 }
             }
@@ -45,7 +46,7 @@
     </script>
 </head>
 
-<body class="font-manrope text-Dark">
+<body class="font-manrope text-Dark font-medium">
     <!-- header section -->
     <header class="pb-24 bg-gray-100 bg-custom-gradient">
         <!-- navbar -->
@@ -202,7 +203,7 @@
         </section>
 
 
-        <!-- work process section -->
+        <!-- works process section -->
         <section class="w-10/12 mx-auto lg:pb-28 pb-8">
             <div class="space-y-6 pb-8">
                 <div class="flex justify-center">
@@ -217,7 +218,8 @@
                 <h3 class="md:text-4xl text-2xl font-extrabold text-center">
                     Our Works Process</h3>
                 <p class="text-Gray text-center lg:px-56">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents.
                 </p>
             </div>
             <!-- card content -->
@@ -258,6 +260,52 @@
                             modern.</p>
                     </div>
                 </div>
+        </section>
+
+
+        <!-- portfolio section -->
+
+
+        <!-- contact section -->
+        <section class="bg-contact-bg bg-no-repeat bg-cover py-24">
+            <div class="space-y-6">
+                <div class="flex justify-center">
+                    <button class="btn flex bg-primaryLight rounded-full font-extrabold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                        Let's Connect</button>
+                </div>
+                <h3 class="md:text-4xl text-2xl font-extrabold text-center">
+                    Let's Discuss Next Project</h3>
+                <p class="text-Gray text-center lg:px-56">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents.
+                </p>
+            </div>
+            <!-- contact input form -->
+            <div class="w-9/12 mx-auto pt-12">
+                <form action="" class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+                    <input type="text" placeholder="First Name*" class="p-4 bg-white rounded-full">
+                    <input type="text" placeholder="Last Name*" class="p-4 bg-white rounded-full">
+                    <input type="text" placeholder="Phone Number*" class="p-4 bg-white rounded-full">
+                    <input type="email" placeholder="Email Number*" class="p-4 bg-white rounded-full">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"
+                        class="p-4 bg-white rounded-2xl lg:col-span-2"></textarea>
+                    <a class="btn text-xl rounded-full w-full font-extrabold bg-primaryDark lg:col-span-2 hover:bg-primaryLight">
+                        Send Mail
+                        <button class="bg-black text-white rounded-full p-1 w-8 h-8 -rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </button>
+                    </a>
+                </form>
+            </div>
         </section>
     </main>
 
