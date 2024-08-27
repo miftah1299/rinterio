@@ -26,6 +26,7 @@
                         Gray: 'rgb(73, 73, 73)',
                         GrayLight: 'rgb(115, 115, 115)',
                         Dark: 'rgb(33, 33, 33)',
+                        Dark2: 'rgb(28, 28, 28)',
                         background: 'rgb(30, 30, 30);',
                         concept: 'rgb(231, 193, 211)',
                         design: 'rgb(239, 218, 110)',
@@ -267,8 +268,8 @@
 
 
         <!-- contact section -->
-        <section class="bg-contact-bg bg-no-repeat bg-cover py-24">
-            <div class="space-y-6">
+        <section class="bg-contact-bg bg-no-repeat bg-cover lg:py-24 py-8">
+            <div class="space-y-4">
                 <div class="flex justify-center">
                     <button class="btn flex bg-primaryLight rounded-full font-extrabold">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -278,15 +279,15 @@
                         </svg>
                         Let's Connect</button>
                 </div>
-                <h3 class="md:text-4xl text-2xl font-extrabold text-center">
+                <h3 class="md:text-4xl text-2xl font-extrabold text-center px-14">
                     Let's Discuss Next Project</h3>
-                <p class="text-Gray text-center lg:px-56">
+                <p class="text-Gray text-center lg:px-36">
                     The barn house captivates with its blend of rustic charm and modern sophistication, featuring
                     weathered wood, sleek metal accents.
                 </p>
             </div>
             <!-- contact input form -->
-            <div class="w-9/12 mx-auto pt-12">
+            <div class="lg:w-9/12 w-10/12 mx-auto pt-12">
                 <form action="" class="grid lg:grid-cols-2 grid-cols-1 gap-6">
                     <input type="text" placeholder="First Name*" class="p-4 bg-white rounded-full">
                     <input type="text" placeholder="Last Name*" class="p-4 bg-white rounded-full">
@@ -294,7 +295,8 @@
                     <input type="email" placeholder="Email Number*" class="p-4 bg-white rounded-full">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"
                         class="p-4 bg-white rounded-2xl lg:col-span-2"></textarea>
-                    <a class="btn text-xl rounded-full w-full font-extrabold bg-primaryDark lg:col-span-2 hover:bg-primaryLight">
+                    <a
+                        class="btn text-xl rounded-full w-full font-extrabold bg-primaryDark lg:col-span-2 hover:bg-primaryLight">
                         Send Mail
                         <button class="bg-black text-white rounded-full p-1 w-8 h-8 -rotate-45">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -309,8 +311,41 @@
         </section>
     </main>
 
-    <footer>
-
+    <footer class="bg-Dark2 lg:py-24 py-16 lg:px-0 px-8 lg:space-y-12 space-y-8">
+        <div class="lg:w-5/12 mx-auto space-y-4">
+            <a class="font-extrabold text-3xl flex items-center gap-2 justify-center">
+                <button class="bg-primaryDark rounded-full p-1 w-8 h-8 -rotate-45">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </button>
+                <span class="text-zinc-200">Rinterio</span>
+            </a>
+            <p class="text-GrayLight text-center">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                wood, sleek metal accents.
+            </p>
+        </div>
+        <div class="lg:w-6/12 mx-auto flex md:flex-row items-center flex-col lg:gap-28 gap-8 text-zinc-200">
+            <p>Home</p>
+            <p>Services</p>
+            <p>Portfolio</p>
+            <p>Blogs</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="text-center">
+            <a class="btn text-xl rounded-full font-extrabold bg-primaryDark md:w-auto w-full">Book Consult
+                <button class="bg-black text-white rounded-full p-1 w-8 h-8 -rotate-45">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </button>
+            </a>
+        </div>
     </footer>
 </body>
 
