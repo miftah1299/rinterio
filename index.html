@@ -49,28 +49,11 @@
 
 <body class="font-manrope text-Dark font-medium">
     <!-- header section -->
-    <header class="pb-24 bg-gray-100 bg-custom-gradient">
+    <header class="md:pt-14 pt-8 lg:pb-24 pb-10 bg-gray-100 bg-custom-gradient">
         <!-- navbar -->
-        <nav class="w-10/12 mx-auto pb-14">
+        <nav class="w-10/12 mx-auto md:pb-14 pb-8">
             <div class="navbar justify-between">
                 <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost bg-white lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-semibold">
-                            <li class="font-bold"><a>Home</a></li>
-                            <li class="text-GrayLight"><a>Services</a></li>
-                            <li class="text-GrayLight"><a>Portfolio</a></li>
-                            <li class="text-GrayLight"><a>Blog</a></li>
-                            <li class="text-GrayLight"><a>Contact Us</a></li>
-                        </ul>
-                    </div>
                     <a class="font-extrabold text-3xl flex items-center gap-2">
                         <button class="bg-primaryDark rounded-full p-1 w-8 h-8 -rotate-45">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -92,7 +75,7 @@
                         <li class="text-GrayLight"><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end flex gap-4">
+                <div class="navbar-end md:flex gap-4 hidden">
                     <button class="bg-white border text-GrayLight text-center rounded-full p-1 w-8 h-8">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
@@ -117,6 +100,21 @@
                         </button>
                     </a>
                 </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-circle lg:hidden bg-white border text-GrayLight">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>                          
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-semibold right-0">
+                        <li class="font-bold"><a>Home</a></li>
+                        <li class="text-GrayLight"><a>Services</a></li>
+                        <li class="text-GrayLight"><a>Portfolio</a></li>
+                        <li class="text-GrayLight"><a>Blog</a></li>
+                        <li class="text-GrayLight"><a>Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -124,7 +122,7 @@
         <div class="w-10/12 mx-auto space-y-7 text-center pb-6">
             <img class="mx-auto" src="assets/banner.png" alt="">
             <h2 class="md:text-6xl text-3xl font-extrabold">A barn house of this design has a striking appearance</h2>
-            <p class="text-Gray px-24">The barn house captivates with its blend of rustic charm and modern
+            <p class="text-Gray md:px-24">The barn house captivates with its blend of rustic charm and modern
                 sophistication,
                 featuring weathered wood, sleek metal accents, and large windows that flood the space with natural
                 light.</p>
